@@ -16,6 +16,12 @@ yarn add
 solc-select install 0.5.0 && solc-select use 0.5.0
 pipenv run python erc20/erc20.py node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol ERC721
 ```
+## Troubleshooting
+
+1. Uninstall any `solc` if got error messages on solc version.
+2. Do not use any `solc` w/version `> 0.6`, since `--compact-json` is deprecated after that. Fix needed.
+3. If (2), try use an older oz lib (e.g. version 2.3.0)
+4. tba
 
 ## Results
 
