@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+crytic-compile = "==0.1.4"
+prettytable = "==0.7.2"
+pysha3 = "==1.0.2"
+slither-analyzer = "==0.6.7"
+solc-select = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.10"

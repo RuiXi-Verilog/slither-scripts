@@ -1,16 +1,18 @@
 # Slither scripts
 
-- In `erc20` folder, a script to detect ERC20 interfaces
-- In `modifier` folder, a script to detect functions with a given modifier
+```
+pip install pipenv --user
+pipenv -python 3.10.8
+pipenv install --dev
+solc-select install 0.4.24 && solc-select use 0.4.24
+pipenv run python erc20/erc20.py erc20/ERC20.sol ERC20
+```
 
-## Requirements
-- [Python 3](https://www.python.org/downloads/)
-
-## Install
-1. `pip3 install -r requirements.txt`
-
-## Usage
-Find specific usage instructions in each script folder.
-
-## Maintainers
-[@tinchoabbate](https://github.com/tinchoabbate)
+```
+nvm use 16
+npm install yarn
+yarn add
+# yarn add @openzeppelin/contracts@2.3.0
+solc-select install 0.5.0 && solc-select use 0.5.0
+pipenv run python erc20/erc20.py node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol ERC721
+```
